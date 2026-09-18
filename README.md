@@ -34,7 +34,7 @@ Recommended for a first run: **1× H100 80GB, BF16** (reference precision, plent
 5. Wait for `Application startup complete`. Endpoint:
    `https://<POD_ID>-8000.proxy.runpod.net/v1`
 
-Alternatively create the pod from your Mac with `python runpod/create_pod.py` (needs `RUNPOD_API_KEY`).
+Alternatively create the pod from your Mac with `python runpod/create_pod.py` and stop / resume / terminate it with `python runpod/manage_pod.py` (both need `RUNPOD_API_KEY`).
 
 ## Verify
 ```bash
