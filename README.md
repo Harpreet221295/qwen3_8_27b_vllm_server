@@ -1,4 +1,4 @@
-# qwen_vllm_server — Qwen3.8-27B on RunPod with vLLM
+# qwen3_8_27b_vllm_server — Qwen3.8-27B on RunPod with vLLM
 
 Deploys `Qwen/Qwen3.8-27B` (dense 27B, **native image + video understanding**, 262K context,
 thinking mode on by default) as an OpenAI-compatible server on a RunPod GPU pod.
@@ -28,7 +28,7 @@ Recommended for a first run: **1× H100 80GB, BF16** (reference precision, plent
 3. Expose **HTTP port 8000**. Set env vars `HF_TOKEN` (optional for public model) and `VLLM_API_KEY`.
 4. Container start command (or run manually in the pod terminal):
    ```bash
-   git clone <this repo> /workspace/qwen_vllm_server && cd /workspace/qwen_vllm_server
+   git clone <this repo> /workspace/server && cd /workspace/server
    ./serve.sh configs/h100_80gb_bf16.env
    ```
 5. Wait for `Application startup complete`. Endpoint:
