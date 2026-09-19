@@ -27,7 +27,7 @@ r = client.chat.completions.create(
     max_tokens=2048, temperature=1.0, top_p=0.95,
     extra_body={"chat_template_kwargs": {"reasoning_effort": "low"}, "top_k": 20})
 m = r.choices[0].message
-print("reasoning chars:", len(getattr(m, "reasoning_content", "") or ""), "| answer:", m.content)
+print("reasoning chars:", len(getattr(m, "reasoning_content", None) or getattr(m, "reasoning", None) or ""), "| answer:", m.content)
 
 step("3. image input (synthetic)")
 img = Image.new("RGB", (400, 200), "white"); d = ImageDraw.Draw(img)
