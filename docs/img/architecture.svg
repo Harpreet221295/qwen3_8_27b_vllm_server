@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="380" viewBox="0 0 1100 380" font-family="-apple-system,Segoe UI,Inter,Helvetica,Arial,sans-serif">
+  <rect width="1100" height="380" fill="#0f1117" rx="14"/>
+  <g stroke="#3a4260" stroke-width="2" fill="#171a23">
+    <rect x="40" y="70" width="330" height="240" rx="12"/>
+    <rect x="700" y="70" width="360" height="240" rx="12"/>
+  </g>
+  <text x="205" y="105" fill="#8b93a7" font-size="14" text-anchor="middle" letter-spacing="2">MACBOOK (M1)</text>
+  <text x="880" y="105" fill="#8b93a7" font-size="14" text-anchor="middle" letter-spacing="2">RUNPOD · A100 SXM 80GB</text>
+  <g fill="#0d0f15" stroke="#7c9cff" stroke-width="1.5">
+    <rect x="65" y="125" width="280" height="44" rx="8"/><rect x="65" y="180" width="280" height="44" rx="8"/><rect x="65" y="235" width="280" height="44" rx="8"/>
+  </g>
+  <g fill="#e6e8ef" font-size="15">
+    <text x="205" y="153" text-anchor="middle">chat playground  :7860</text>
+    <text x="205" y="208" text-anchor="middle">agent console + Docker sandbox  :7861</text>
+    <text x="205" y="263" text-anchor="middle">τ²-bench console  :7862</text>
+  </g>
+  <rect x="725" y="125" width="310" height="70" rx="8" fill="#0d0f15" stroke="#4cc38a" stroke-width="1.5"/>
+  <text x="880" y="152" fill="#e6e8ef" font-size="15" text-anchor="middle">vllm serve Qwen/Qwen3.8-27B (BF16, 52 GB)</text>
+  <text x="880" y="178" fill="#8b93a7" font-size="13" text-anchor="middle">reasoning parser qwen3 · tool parser qwen3_xml · 131K ctx</text>
+  <rect x="725" y="210" width="310" height="70" rx="8" fill="#0d0f15" stroke="#c9a86a" stroke-width="1.5"/>
+  <text x="880" y="237" fill="#e6e8ef" font-size="15" text-anchor="middle">/workspace volume (120 GB)</text>
+  <text x="880" y="263" fill="#8b93a7" font-size="13" text-anchor="middle">HF_HOME cache → weights survive restarts</text>
+  <g stroke="#7c9cff" stroke-width="2.5" fill="none" marker-end="url(#a)">
+    <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#7c9cff"/></marker></defs>
+    <path d="M370 190 C 480 190, 560 160, 700 160"/>
+  </g>
+  <text x="535" y="140" fill="#7c9cff" font-size="14" text-anchor="middle">HTTPS · OpenAI-compatible API</text>
+  <text x="535" y="215" fill="#8b93a7" font-size="12" text-anchor="middle">https://&lt;pod&gt;-8000.proxy.runpod.net/v1</text>
+  <text x="535" y="236" fill="#8b93a7" font-size="12" text-anchor="middle">Bearer VLLM_API_KEY</text>
+  <text x="550" y="345" fill="#8b93a7" font-size="13" text-anchor="middle">Also served: /v1/messages (Anthropic format) · /metrics (Prometheus) · /health</text>
+</svg>
